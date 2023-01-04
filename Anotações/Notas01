@@ -52,3 +52,36 @@ ex: print('oi, {}. oi também {}'.format(nome1, nome2))
 
 .format() -> Recebe outras funções para exibir o resultado de um exercício.
 ex: print('{}'.format(type(algo))) -> Vai exibir o tipo de algo, que foi digitado pelo usuário.
+
+Operadores Aritméticos
+
++ Adição -> 5 + 2 == 7
+- Subtração -> 5 - 2 == 3
+* Multiplicação -> 5 * 2 == 10
+/ Divisão -> 5 / 2 == 2.5
+** Potência -> 5 ** 2 == 25
+// Divisão inteira -> 5 // 2 == 2
+% Resto de Divisão -> 5 % 2 == 1
+
+OBS: == significa (igual) diferente de = (recebe).
+
+Ordem de precedência: 
+
+1 - () tem parênteses, vai primeiro
+2 - ** segunda coisa mais importante
+3 - *(multiplicação) /(Divisão) //(Divisão inteira) %(Resto de divisão) tem o mesmo peso, nessa ordem.
+4 - + (Adição) - (Subtração)
+
+Centralização na mascara em print:
+
+print('\nPrazer em te conhecer {:^20}! - Centralizado'.format(nome))
+print('\nPrazer em te conhecer {:>20}! - Na direita'.format(nome))
+print('\nPrazer em te conhecer {:<20}! - Na esquerda'.format(nome))
+
+dentro da mascara temos {:20}, que faz com que o contúdo a ser mostrado na tela seja exibido em 20 espaços.
+^ faz com que o conteúdo esteja Centralizado nos 20 espaços.
+< faz o conteúdo ficar alinhado a esquerda dos espaços.
+> faz o conteúdo ficar alinhado a direita dos espaços.
+
+ainda nas mascaras podemos formatar números float muito extensos, com:
+{:.2f} -> faz com que sómente dois números depois da vírgula sejam visíveis.
