@@ -96,3 +96,7 @@ ex: (antes) {} -> 5
 
     (deois) {:2} ->  5
             {:2} -> 80
+
+Podemos utilizar comandos de print como: print('-' * 10) -> para repitir o caracter 10 vezes na tela do usuário.
+
+OBS importante: Para um melhor funcionamento e manuntenção do espaço de memória utilizado pelo código, é melhor utilizar menos variáveis se for possível.
