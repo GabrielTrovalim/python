@@ -14,5 +14,5 @@ print('\n {:=^59} \n'.format(bar))
 ar = alt * larg # Essa é a área da parede.
 l = ar/2
 
-print('A área da sua parede corresponde a {:.2f} metros quadrados'.format(ar))
-print('\nCom essas medidas você vai precisar de {:.2f} litros de tinta'.format(l))
+print('\nSua parede tem a dimensão de {}x{} e sua área é de {}m².'.format(alt, larg, ar))
+print('\nPara pintar essa parede, você precisará de {} litros de tinta.'.format(l))

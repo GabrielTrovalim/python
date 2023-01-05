@@ -1,4 +1,4 @@
-sal = float(input('\nInforme o seu salário (em real): '))
+sal = float(input('\nInforme o seu salário: R$'))
 
 pct = sal * 0.15
 tot = sal + pct

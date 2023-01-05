@@ -1,9 +1,9 @@
 msg = str('\nTABUADA\n')
-bar = str('=')
 
-print('{:^40} \n {:=^40} \n'.format(msg, bar))
+print('{:^40}'.format(msg))
+print('=' * 20)
 
-num = int(input('Digite um valor inteiro: '))
+num = int(input('\nDigite um número para ver a sua tabuada: '))
 
 v2 = num * 2
 v3 = num * 3
@@ -16,13 +16,15 @@ v9 = num * 9
 v10 = num * 10
 
 print('\nA tabuada do {} é:\n'.format(num))
-print(' {} X 1 = {}'.format(num, num))
-print('\n {} X 2 = {}'.format(num, v2))
-print('\n {} X 3 = {}'.format(num, v3))
-print('\n {} X 4 = {}'.format(num, v4))
-print('\n {} X 5 = {}'.format(num, v5))
-print('\n {} X 6 = {}'.format(num, v6))
-print('\n {} X 7 = {}'.format(num, v7))
-print('\n {} X 8 = {}'.format(num, v8))
-print('\n {} X 9 = {}'.format(num, v9))
-print('\n {} X 10 = {} \n'.format(num, v10))
+print('=' * 15)
+print('\n {} x {:2} = {:2}'.format(num, 1 ,num))
+print('\n {} x {:2} = {}'.format(num, 2 ,v2))
+print('\n {} x {:2} = {}'.format(num, 3 ,v3))
+print('\n {} x {:2} = {}'.format(num, 4 ,v4))
+print('\n {} x {:2} = {}'.format(num, 5 ,v5))
+print('\n {} x {:2} = {}'.format(num, 6 ,v6))
+print('\n {} x {:2} = {}'.format(num, 7 ,v7))
+print('\n {} x {:2} = {}'.format(num, 8 ,v8))
+print('\n {} x {:2} = {}'.format(num, 9 ,v9))
+print('\n {} x {:2} = {} \n'.format(num, 10 ,v10))
+print('=' * 15)

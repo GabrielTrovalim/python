@@ -7,7 +7,7 @@ bar = str('=')
 print('{:^40}'.format(msg))
 print('{:=^39}\n'.format(bar))
 
-pre = float(input('Informe o preço do produto: '))
+pre = float(input('Informe o preço do produto: R$'))
 
 dec = pre * 0.05
 totn = pre - dec

@@ -85,3 +85,14 @@ dentro da mascara temos {:20}, que faz com que o contúdo a ser mostrado na tela
 
 ainda nas mascaras podemos formatar números float muito extensos, com:
 {:.2f} -> faz com que sómente dois números depois da vírgula sejam visíveis.
+
+é possível aplicar contas dentro de .format().
+ex: .format(n, (n+1), (n-1)) -> mostrará o número n, seu sucessor e seu antecessor. Podemos utilizar esse método quando não houver a necessidade de guardar variáveis com esses resultados.
+
+Também podemos fazer um alinhamento nas mascaras fazendo com que elas tenham mais casas para ocupar.
+
+ex: (antes) {} -> 5
+            {} -> 80
+
+    (deois) {:2} ->  5
+            {:2} -> 80

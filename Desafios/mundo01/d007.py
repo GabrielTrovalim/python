@@ -8,5 +8,5 @@ no2 = float(input('\nDigite a segunda nota: '))
 
 media = (no1 + no2)/2
 
-print('\nA nota 1 do aluno foi: {:.2f} \nA nota 2 do aluno foi: {:.2f}'.format(no1, no2))
-print('\nA média obitida pelo aluno foi de: {:.2f}'.format(media))
+print('\nA nota 1 do aluno foi: {:.1f} \nA nota 2 do aluno foi: {:.1f}'.format(no1, no2))
+print('\nA média obitida pelo aluno foi de: {:.1f}'.format(media))
