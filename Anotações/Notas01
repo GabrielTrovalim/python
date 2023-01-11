@@ -114,3 +114,12 @@ A biblioteca 'math', traz novas funcionalidades de matemática e já vem instala
 Para baixar uma biblioteca do site do python.org é simples, é preciso utilizar o cmd com um comando já disponibilizado no site das bibliotecas.
 
 ex: pip install emoji -> instala toda a biblioteca de emoji para python.
+
+escolhendo aleatoriamente: 
+
+lista = {'Gabo': 1, 'Gabi': 2, 'Dalila': 3, 'Maria': 4}
+name, id = random.choice(list(lista.items()))
+
+print(name) -> esse código escolhe entre os quatro nomes disponíveis e seus IDs, porém, aqui só estou mostrando o nome (name).
+
+obs: name e id são recomendados.
