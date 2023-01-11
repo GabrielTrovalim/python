@@ -10,7 +10,7 @@ Já, print('6' + '4') mostraria, 64 ao invés de 10 como resultado, por não ser
 
 Variáveis: Print + Variáveis.
 
-Variáveis recebem e armazenam informações importantes para o funcionamento de um sistema, ou inseridos pelo usuário.
+Variáveis recebem e armazenam informações importantes para o funcionamento de um sistema, que podem ser inseridos pelo usuário.
 
 ex: nome = 'Gabriel' -> A variável (nome) recebe Gabriel, entre aspas para identificar se isso é ou não um número.
 
@@ -34,7 +34,7 @@ OBS: \n dentro de aspas quebra linhas na exibição do código escrito.
 
 Formatação no print:
 
-É possível colocar {} em um determinado lugar dentro das aspas simples ou duplas para recer a resposta formatada de uma variável.
+É possível colocar {} em um determinado lugar dentro das aspas simples ou duplas para receber a resposta formatada de uma variável.
 
 sitaxe: print('oi, {}'.fotmat(var)) -> sendo var a variavel que vai ter o conteúdo exibido na tela.
 
@@ -65,14 +65,14 @@ Operadores Aritméticos
 
 OBS: == significa (igual) diferente de = (recebe).
 
-Ordem de precedência: 
+Ordem de precedência: (Contas)
 
 1 - () tem parênteses, vai primeiro
 2 - ** segunda coisa mais importante
 3 - *(multiplicação) /(Divisão) //(Divisão inteira) %(Resto de divisão) tem o mesmo peso, nessa ordem.
 4 - + (Adição) - (Subtração)
 
-Centralização na mascara em print:
+Centralização na máscara em print:
 
 print('\nPrazer em te conhecer {:^20}! - Centralizado'.format(nome))
 print('\nPrazer em te conhecer {:>20}! - Na direita'.format(nome))

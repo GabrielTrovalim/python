@@ -2,10 +2,11 @@
 # Se o preço original é 100 precisamos multiplicalo por 0.05
 
 msg = str('\nCAIXA\n')
-bar = str('=')
+
 
 print('{:^40}'.format(msg))
-print('{:=^39}\n'.format(bar))
+print('=' * 20)
+print('\n')
 
 pre = float(input('Informe o preço do produto: R$'))
 
