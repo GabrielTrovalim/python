@@ -127,3 +127,10 @@ obs: name e id são recomendados.
 listas em python recebem valores por meio desses simbolos: []
 ex:
     lista = [n1, n2] -> isso é uma lista de dois itens.
+
+CADDEIAS DE TEXTO:
+
+fatiamento: ex: frase = Curso em Vídeo python
+    com o comando frase[9] o caracter 9 será mostrado, lembrando que o python começa a contar do 0 (zero), então, o caracter 9 será V.
+
+    
