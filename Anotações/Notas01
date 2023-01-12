@@ -100,3 +100,17 @@ ex: (antes) {} -> 5
 Podemos utilizar comandos de print como: print('-' * 10) -> para repitir o caracter 10 vezes na tela do usuário.
 
 OBS importante: Para um melhor funcionamento e manuntenção do espaço de memória utilizado pelo código, é melhor utilizar menos variáveis se for possível.
+
+Importando bibliotecas (módulos): Adicionam funcionalidades até então não disponíveis para o nosso código.
+
+Para importar bibliotecas, usamos o comando import.
+
+ex: import doces -> importa todos os doces da biblioteca de doces.
+
+já, from doces import pudim  -> importa apenas o pudim da biblioteca de doces.
+
+A biblioteca 'math', traz novas funcionalidades de matemática e já vem instalada junto da linguagem, porém não importada para o código.
+
+Para baixar uma biblioteca do site do python.org é simples, é preciso utilizar o cmd com um comando já disponibilizado no site das bibliotecas.
+
+ex: pip install emoji -> instala toda a biblioteca de emoji para python.
