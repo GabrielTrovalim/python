@@ -123,3 +123,7 @@ name, id = random.choice(list(lista.items()))
 print(name) -> esse código escolhe entre os quatro nomes disponíveis e seus IDs, porém, aqui só estou mostrando o nome (name).
 
 obs: name e id são recomendados.
+
+listas em python recebem valores por meio desses simbolos: []
+ex:
+    lista = [n1, n2] -> isso é uma lista de dois itens.
