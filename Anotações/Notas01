@@ -157,4 +157,31 @@ Análise de string:
     'Curso' in frase -> diz se tem a palavra Curso em frase e retorna True ou False.
 
 Transformação:
-    
+
+    frase.replace('Python','Android') -> Procura a palavra Python em frase e troca pela palavra Android.
+
+    frase.upper() ->Troca todas as letras minusculas por letras maiusculas, não interferindo nas letras maiusculas presentes préviamente.
+
+    frase.lower() -> mantém o que é minusculo e transforma as que estão em maiusculas para minusculas.
+
+    frase.capitalize() -> Pega a string inteira e deixa só a primeira letra em maiúsculo.
+
+    frase.title() -> analisa a string por completo e capitaliza as letras iniciais de cada palavra contida na string. 
+
+    frase.strip() -> Retira espaços desnecessários no começo e no fim de uma string (mantém os espaços de meio de frase sem problemas).
+
+    frase.rstrip() -> sendo Rstrip pq o R indica que a análise e correção irá começar pela direita. No geral, faz o mesmo que o strip normal, porém do lado direito.
+
+    frase.lstrip() -> O mesmo, porém do lado esquerdo.
+
+Divisão: 
+
+    frase.split() -> ex: Curso em Vídeo Python.
+        O split pegará as 4 palavras da frase e dividirá em 4 strings diferentes: Curso // em // Vídeo // Python.
+
+Junção:
+
+    '-'.join(frase) -> Irá desfazer o ultimo comando e fará a junção pelos sinais de -, substituindo os espaços.
+
+usar print(""" ... """) permite uma livre formatação da string que será mostrada na tela.
+
