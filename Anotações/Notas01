@@ -131,6 +131,12 @@ ex:
 CADDEIAS DE TEXTO:
 
 fatiamento: ex: frase = Curso em Vídeo python
+
     com o comando frase[9] o caracter 9 será mostrado, lembrando que o python começa a contar do 0 (zero), então, o caracter 9 será V.
+
+    outro modo: Também podemos fatiar uma parte maior da nossa variável, utilizando a seguinte sintaxe:
+
+    frase[9:21] -> que vai da letra V (maiúscula) até a casa depois de n (ultima letra da cadeia). Isso não impede que o precesso de certo, na verdade ele exibirá a frase Vídeo Python.
+    OBS: Esse tipo de comando sempre pega um iten a menos do que informado após os dois pontos, ex: frase[9:13] não mostra Vídeo, mas sim Víde, sendo necessário colocar frase[9:14] para que o resultado esperado apareça.
 
     
