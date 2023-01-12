@@ -4,7 +4,7 @@ import math
 print(emoji.emojize("Usando pit :cérebro:", language='pt'))
 
 catop = float(input('\nDigite o valor do cateto maior: '))
-catad = float(input('\nDigite o valor do cateto melhor: '))
+catad = float(input('\nDigite o valor do cateto menor: '))
 
 #A hipotenusa é calculada a partir do teorema de pitagoras, que leva a raiz da soma dos dos quadrados dos catetos.
 
