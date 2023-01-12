@@ -139,4 +139,22 @@ fatiamento: ex: frase = Curso em Vídeo python
     frase[9:21] -> que vai da letra V (maiúscula) até a casa depois de n (ultima letra da cadeia). Isso não impede que o precesso de certo, na verdade ele exibirá a frase Vídeo Python.
     OBS: Esse tipo de comando sempre pega um iten a menos do que informado após os dois pontos, ex: frase[9:13] não mostra Vídeo, mas sim Víde, sendo necessário colocar frase[9:14] para que o resultado esperado apareça.
 
+    frase[:5] -> faz o fatiamento começar do primeiro caractér da cadeia já que o primeiro componente foi omitido.
+    Da mesma maneira frase[15:] faz o print começar em P e exibir Python na tela.
+
+Análise de string:
+
+    len(frase) -> Mostra quantas casinhas o caracter ocupa, contando os espaços.
+
+    frase.count('o') -> esse exemplo faz o python contar quantas letras 'o' minusculas estão contidas na frase.
+
+    frase.count('o',0,13) -> considera o comprimento do caracter 0 até o caracter 12 já que descarta o ultimo e mostra a quantidade de 'o'.
+
+    frase.find('deo') -> mostra onde se inicia e se encontra o conjunto de letras 'deo'.
+
+    frase.find('Android') -> caso essa string não for encontrada na variável frase, será retornado um valor de -1.
+
+    'Curso' in frase -> diz se tem a palavra Curso em frase e retorna True ou False.
+
+Transformação:
     
