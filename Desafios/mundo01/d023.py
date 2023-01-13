@@ -1,0 +1,8 @@
+num = int(input('Digite um número de 0 a 9999: '))
+num2 = str(num)
+print(num2[:4])
+print('\nO número digitado foi: {}'.format(num2[:4]))
+print('Unidade: {}'.format(num2[3]))
+print('Dezena: {}'.format(num2[2]))
+print('Centena: {}'.format(num2[1]))
+print('Milhar: {} \n'.format(num2[0]))
