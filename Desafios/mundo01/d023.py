@@ -1,8 +1,12 @@
 num = int(input('Digite um número de 0 a 9999: '))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
 num2 = str(num)
-print(num2[:4])
+
 print('\nO número digitado foi: {}'.format(num2[:4]))
-print('Unidade: {}'.format(num2[3]))
-print('Dezena: {}'.format(num2[2]))
-print('Centena: {}'.format(num2[1]))
-print('Milhar: {} \n'.format(num2[0]))
+print('Unidade: {}'.format(u))
+print('Dezena: {}'.format(d))
+print('Centena: {}'.format(c))
+print('Milhar: {} \n'.format(m))

@@ -1,7 +1,9 @@
-nome = str(input('Digite o seu nome: '))
-proc = 'Silva' in nome
-proc1 = 'silva' in nome
+nome = str(input('Digite o seu nome: ')).strip()
+up = nome.upper().strip()
+name = nome.capitalize().strip()
 
-if proc == True: print('O seu nome contém Silva')
-elif proc1 == True: print('O seu nome contém silva')
-else: print('O seu nome é {} e não contém o sobrenome silva'.format(nome))
+proc = 'SILVA' in up
+
+print('\nO seu nome é {}'.format(name))
+if proc == True: print('\nO seu nome contém Silva')
+else: print('\nO seu nome não contém o sobrenome silva')
