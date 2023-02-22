@@ -1,0 +1,5 @@
+city = str(input('Digite o nome da sua cidade: ')).strip().title()
+big = city.upper()
+separado = big.split()
+if (separado[0] == 'SANTO'): print('O nome da sua cidade começa com "Santo".')
+else: print('O nome da sua cidade é {} e possui "Santo" no começo'.format(city))
