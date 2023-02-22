@@ -1,0 +1,5 @@
+nome = str(input('Diga o seu nome: ')).strip()
+big = nome.upper()
+proc = big.find('SILVA')
+if(proc < 0): print('O seu nome não contém "Silva".')
+else: print('O seu nome contém "Silva"')
