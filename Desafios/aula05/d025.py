@@ -1,0 +1,5 @@
+frase = str(input('Escreva uma frase: ')).strip().capitalize()
+big = frase.upper()
+proc = big.find('A')
+con = big.count('A')
+print('A frase\n{}\nTem {} aparições da letra "A"\nA primeira aparição da letra "A" é na posição {}'.format(frase, con, proc))
