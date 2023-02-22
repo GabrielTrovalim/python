@@ -1,0 +1,6 @@
+nome = str(input('Digite o seu nome: ')).strip()
+maiu = nome.upper()
+minu = nome.lower()
+junto = len(nome.replace(' ', ''))
+sepa = nome.split()
+print('\nSeu nome é: {}\nCom todas as letras maiúsculas ele é: {}\nCom todas as letras minúsculas ele é: {}\nSeu nome tem {} letras\nSeu primeiro nome é: {}\nSeu primeiro nome tem {} letras'.format(nome, maiu, minu, junto, sepa[0], len(sepa[0])))
