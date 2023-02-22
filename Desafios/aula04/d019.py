@@ -1,4 +1,8 @@
-import random # Chamando a biblioteca random.
-lista = ['Gabriel', 'João', 'Zézão', 'claudin', 'julia', 'isabela', 'Joana', 'zuleide'] # Criando a lista de alunos.
-escolha = random.randint(0 , 7) # Randomizando números de acordo com os valores na lista.
-print('O escolhido para apagar a lousa foi: {}'.format(lista[escolha])) # Permitindo que random escolha um número da lista e mostre o resultado na tela.
+import random
+alu1 = str(input('Nome do primeiro aluno: '))
+alu2 = str(input('Nome do segundo aluno: '))
+alu3 = str(input('Nome do terceiro aluno: '))
+alu4 = str(input('Nome do quarto aluno: '))
+lista = [alu1, alu2, alu3, alu4]
+escolha = random.choice(lista)
+print('\nO aluno sorteado foi {}'.format(escolha))
