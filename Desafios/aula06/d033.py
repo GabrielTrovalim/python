@@ -5,14 +5,14 @@ num3 = float(input('Digite o terceiro número: '))
 if(num1 > num2 and num1 > num3): # testando o num1.
     print('\nO maior valor digitado foi: {}'.format(num1))
 else:
-    if(num2 > num1 and num2 > num3): 
+    if(num2 > num1 and num2 > num3): # Testando o num2.
         print('\nO maior valor digitado foi: {}'.format(num2))
     else:
         print('\nO maior valor digitado foi: {}'.format(num3))
-if(num1 < num2 and num1 < num3):
+if(num1 < num2 and num1 < num3): # Testando o num1.
     print('O menor valor digitado foi: {}'.format(num1))
-else:
-    if(num2 < num1 and num2 < num3):
+else: 
+    if(num2 < num1 and num2 < num3): # Testando o num2.
         print('O menor valor digitado foi: {}'.format(num2))
     else:
         print('O menor valor digitado foi: {}'.format(num3))
