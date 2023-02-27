@@ -1,0 +1,12 @@
+from time import sleep
+nome = str(input('Insira o nome do cliente: '))
+val_casa = float(input('\nQual é o valor da casa a ser financiada? '))
+salario = float(input('Qual o salário do cliente? '))
+sleep (2)
+print('\nOkay... Informações guardadas.')
+sleep (2)
+time = int(input('\nEm quantos anos o cliente pretende pagar a divida? '))
+sleep (2)
+print('Calculando...')
+sleep (2)
+print('fim do teste.')
