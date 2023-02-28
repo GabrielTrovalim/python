@@ -14,7 +14,9 @@ else:
         print('\nO seu IMC é igual a: {:.1f}.\nVocê se encontra no \033[0;32mpeso ideal\033[m para a sua altura!'.format(imc))
     elif (imc < 29.99):
         print('\nO seu IMC é igual a: {:.1f}.\nVocê se encontra com \033[0;33msobrepeso\033[m para a sua altura.'.format(imc))
-    else:
+    elif (imc < 40):
         print('\nO seu IMC é igual a: {:.1f}.\nVocê se encontra em estado de \033[0;31mobesidade\033[m para a sua altura.'.format(imc))
+    else:
+        print('\nO seu IMC é igual a: {:.1f}.\nVocê se encontra em estado de \033[0;31mobesidade morbida\033[m para a sua altura.')
 sleep(1)
 print('\nFim do calculo de IMC.\nObrigado por participar <3.\n')
