@@ -11,7 +11,7 @@ print('\nInformações guardadas')
 print('Calculando...')
 sleep(2)
 if (v_parcela > porcent):
-    print('\nInfelizmente o emprestimo foi negado...\nO valor de R${:.2f} mensais ultrapassam 30% do salário do cliente.'.format(v_parcela))
+    print('\nInfelizmente o empréstimo foi negado...\nO valor de R${:.2f} mensais ultrapassam 30% do salário do cliente.'.format(v_parcela))
 else:
-    print('\nO seu pedido de emprestimo foi aceito!\nValor mensal a pagar: R${:.2f}\nQuantidade de parcelas: {}'.format(v_parcela, q_anos * 12))
+    print('\nO seu pedido de empréstimo foi aceito!\nValor mensal a pagar: R${:.2f}\nQuantidade de parcelas: {}'.format(v_parcela, q_anos * 12))
 print('\nTenha um ótimo dia, {}!'.format(nome))
