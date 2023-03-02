@@ -12,6 +12,6 @@ else:
         elif (seg1 == seg2 or seg1 == seg3 or seg2 == seg3):
             print('O triângulo formado pelos segmentos é do tipo: Isósceles.')
         else: 
-            print('Todos os lados do triângulo são diferentes.')
+            print('Todos os lados do triângulo são diferentes, sendo do tipo: Escaleno.')
     else:
         print('\nOs segmentos descritos \033[0;31mnão\033[m são capazes de formar um triângulo...')
