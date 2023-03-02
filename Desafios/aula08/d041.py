@@ -14,13 +14,18 @@ elif (ano_nasc < (at_ano - 100)):
 else:
     if (age < 10):
         print('\nO atleta indicado é considerado um atleta \033[0;31mMIRIM\033[m.')
+        print('Por ter {} anos em {}.'.format(age, at_ano))
     elif (age < 15):
         print('\nO atleta indicado é considerado um atleta \033[0;32mINFANTIL\033[m.')
+        print('Por ter {} anos em {}.'.format(age, at_ano))
     elif (age < 20):
         print('\nO atleta indicado é considerado um atleta \033[0;33mJUNIOR\033[m.')
+        print('Por ter {} anos em {}.'.format(age, at_ano))
     elif (age == 20):
         print('\nO atleta indicado é considerado um atleta \033[0;34mSÊNIOR\033[m.')
+        print('Por ter {} anos em {}.'.format(age, at_ano))
     else: 
         print('\nO atleta indicado já pode ser considerado um atleta \033[0;35mMASTER\033[m.')
+        print('Por ter {} anos em {}.'.format(age, at_ano))
 sleep(1)
 print('\nFim da verificação.\nTenha um bom dia!\n')
