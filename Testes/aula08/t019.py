@@ -11,8 +11,11 @@ print('\nCalculando o seu resultado...')
 sleep(2)
 if (sinal == '+'):
     resu_soma = pt_1 + pt_2
-    print('\nResultado:\n {:.1f} + {:.1f} = {:.1f}\n'.format(pt_1, pt_2, resu_soma))
+    print('\nResultado:\n {:.1f} + {:.1f} = {:.1f}'.format(pt_1, pt_2, resu_soma))
     sleep(1)
     print('\nObrigado por testar, tenha um bom dia!\n')
-else:
-    print('oi')
+elif (sinal == '-'):
+    resu_sub = pt_1 - pt_2
+    print('\nResultado:\n {:.1f} - {:.1f} = {:.1f}'.format(pt_1, pt_2, resu_sub))
+    sleep(1)
+    print('\nObrigado por testar, tenha um bom dia!\n')
