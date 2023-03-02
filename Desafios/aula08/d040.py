@@ -8,7 +8,7 @@ nota2 = float(input('Digite a segunda nota do aluno: '))
 med = (nota1 + nota2) / 2
 print('\nCalculando média...')
 sleep(2)
-if (nota1 > 10 or nota1 < 0):
+if (nota1 > 10 or nota1 < 0): # Verifica se há algum erro na entrada de dados.
     print('\n[ERRO] Entrada de dados invalida.\nReinicie o programa para tentar novamente.')
 elif (nota2 > 10 or nota2 < 0):
     print('[ERRO] Entrada de dados invalida.\nReinicie o programa para tentar novamente.')
