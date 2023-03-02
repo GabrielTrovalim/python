@@ -1,1 +1,1 @@
-print('{:=^40}'.format(' Hello '))
+print('{:=^40}'.format(' Hello ')) # Teste de formatação em string.
