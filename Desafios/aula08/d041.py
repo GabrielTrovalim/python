@@ -21,7 +21,7 @@ else:
     elif (age < 20):
         print('\nO atleta indicado é considerado um atleta \033[0;33mJUNIOR\033[m.')
         print('Por ter {} anos em {}.'.format(age, at_ano))
-    elif (age == 20):
+    elif (age < 25):
         print('\nO atleta indicado é considerado um atleta \033[0;34mSÊNIOR\033[m.')
         print('Por ter {} anos em {}.'.format(age, at_ano))
     else: 
