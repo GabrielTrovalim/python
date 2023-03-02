@@ -27,10 +27,12 @@ elif (f_pag == 'C2'): # Opção no crédito até 2x.
     print('\nObrigado pela preferência. tenha um bom dia!\n')
 
 elif (f_pag == 'C3'): # Opção no crédito até 3x.
+    parcelas = int(input('\nVocê pretende parcelar a sua compra em quantas vezes? '))
     juro = preco * 0.2
-    juroc = preco + juro
-    parcela2 = juroc / 3
-    print('\nVocê escolheu, cartão em até 3x!\nCom essa opção de pagamento você tem 20% de juros.\nValor das parcelas: R${:.2f} x3\nValor total: R${:.2f}.'.format(parcela2, juroc))
+    pc_juro = preco + juro # Preço total com juros.
+    parcela_f = pc_juro / parcelas
+    sleep(1)
+    print('\nPagando no cartão em {} vezes, você tem 20% de juros\nValor das parcelas: R${:.2f}\nValor total a pagar: R${:.2f}.'.format(parcelas, parcela_f, pc_juro))
     sleep(2)
     print('\nObrigado pela preferência. tenha um bom dia!\n')
 
