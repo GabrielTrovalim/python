@@ -1,6 +1,6 @@
 from time import sleep
 print('\033[0;31m-=\033[m' * 20)
-print(' ' * 15 + 'Caixa')
+print('{:^40}'.format('Caixa'))
 print('\033[0;31m-=\033[m' * 20)
 preco = float(input('\nInforme o valor do produto:\nR$'))
 f_pag = str(input('\nInforme a forma de pagamento:\nAperte [d] para dinheiro à vista.\nAperte [c] para pagamento no cartão à vista.\nAperte [c2] para pagamento no cartão 2x.\nAperte [c3] para pagamento no cartão 3x.\nDigite aqui: ')).strip().upper()
