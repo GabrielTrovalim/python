@@ -4,4 +4,6 @@ print('{:^40}'.format('Calculadora'))
 print('=-' * 20)
 pt_1 = float(input('Digite o primeiro número: '))
 # operações simples possíveis.
-print('\nEscolha a operação a se fazer\n[+] Somar\n[-] Subtrair\n[X] Multiplicar\n[/] Dividir')
+print('\nEscolha a operação a se fazer\n[+] Somar\n[-] Subtrair\n[X] Multiplicar\n[/] Dividir\n')
+sinal = str(input('Sua opção: ')) # Guarda a operação escolhida.
+pt_2 = float(input('\nDigite o segundo número: '))
