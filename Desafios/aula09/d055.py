@@ -4,5 +4,5 @@ for c in range(0,5):
     pesos.append(peso)
 
 pesos.sort() # Organiza os números de forma crescente.
-print(pesos)
-print('\nO maior peso detectado na pesquisa foi: {}Kg\nJá o menor peso detectado foi: {}Kg'.format(pesos[4], pesos[0]))
+
+print('\nO maior peso detectado na pesquisa foi: {}Kg\nJá o menor peso detectado foi: {}Kg'.format(pesos[-1], pesos[0]))
