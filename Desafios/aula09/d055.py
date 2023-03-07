@@ -1,6 +1,6 @@
 pesos = [] # armazena os pesos informados.
-for c in range(0,5):
-    peso = float(input('Qual é o seu peso em (kg): '))
+for c in range(1,6):
+    peso = float(input('Qual é o peso da {}° pessoa em (kg): '.format(c)))
     pesos.append(peso)
 
 pesos.sort() # Organiza os números de forma crescente.
