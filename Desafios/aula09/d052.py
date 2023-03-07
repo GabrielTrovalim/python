@@ -1,23 +1,13 @@
-# se o número for par (exeto o 2) ele já não é primo.
-# números primos são divididos só e somente por 1 e eles mesmos.
-num = int(input('\nDigite um número inteiro: '))
-if (num % 2 == 0 and num != 2):
-    print('Número não primo')
-else:
-    if(num == 3):
-        print('Número primo!')
-    elif(num == 2):
-        print('Número primo!')
-    elif(num == 5):
-        print('Número primo!')
-    elif(num == 7):
-        print('Número primo!')
+cont = 0
+num = int(input('Digite um número: '))
+for c in range(1, num + 1):
+    if (num % c == 0):
+        print('\033[0;32m', end=' ')
+        cont += 1
     else:
-        if(num % 7 == 0):
-            print('Número não primo')
-        elif(num % 3 == 0):
-            print('Número não primo')
-        elif(num % 5 == 0):
-            print('Número não primo')
-        else:
-            print('Número primo!')
+        print('\033[0;31m', end=' ')
+    print('{}'.format(c),end=' ')
+if cont == 2:
+    print('\n\033[mO número {} é PRIMO.\n'.format(num))
+else:
+    print('\n\033[mO número {} não é PRIMO.\n'.format(num))
