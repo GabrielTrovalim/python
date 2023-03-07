@@ -1,25 +1,32 @@
-idade = [] # lista para idade
-homem = [] # lista para homens
-mulher = [] # lista para mulheres
-mulher19 = [] # lista de mulheres com menos de 20
-for c in range(0,5):
-    nome = str(input('\nDiga o seu nome: ')).strip().capitalize()
-    sex = str(input('Informe o seu sexo (M para masculino e F para feminino): ')).upper()
-    age = int(input('Diga a sua idade: '))
-    if sex == 'M':
-        homem.append(nome)
-        #homem.append(sex)
-        homem.append(age)
-    else:
-        mulher.append(nome)
-        #mulher.append(sex)
-        mulher.append(age)
-    idade.append(age)
-    if sex == 'F' and age < 20:
-        mulher19.append(nome)
+idade_g = 0
+mulheres19 = 0
+maior = 0 # maior idade detectada
+nomem = '' # nome do homem mais velho
+for c in range(1,5):
+    print('\n')
+    print('=' * 10, '{}° pessoa'.format(c), '=' * 10)
+    nome = str(input('Qual é o seu nome? ')).strip().capitalize()
+    idade = int(input('Quantos anos você tem? ')) # idade da pessoa.
+    sex = str(input('Seu sexo [M/F]: ')).strip().upper()
+    idade_g += idade
+    if sex == 'F' and idade < 20:
+        mulheres19 += 1
 
-# 1,4,7,10,13
-media = (idade[0] + idade[1] + idade[2] + idade[3] + idade[4]) / 5
-print('\nA média de idade do grupo é: {} anos.'.format(media))
-print('\nO homem mais velho do grupo se chama: {}, com {} anos.'.format(homem[-2], homem[-1]))
-print('\nO grupo possui {} garotas com menos de 20 anos.'.format(len(mulher19)))
+    if sex == 'M': 
+        if c == 1:
+            maior = idade
+            nomem = nome
+        else:
+            if idade > maior:
+                maior = idade
+                nomem = nome
+
+print('\n\033[0;31m','=' * 50,'\033[m')
+print('\nA média da idade do grupo é igual a: {}'.format(idade_g / 4))
+if mulheres19 == 1:
+    print('\nO grupo possui apenas uma mulher com menos de 20 anos.')
+elif mulheres19 == 0:
+    print('\nO grupo não possui nenhuma mulher com menos de 20 anos.')
+else:
+    print('\nO grupo possui {} mulheres com menos de 20 anos.'.format(mulheres19))
+print('\nO nome do homem mais velho é {} com {} anos.\n'.format(nomem, maior))
