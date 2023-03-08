@@ -1,7 +1,7 @@
 nomes = []
-n = 2
-while n != 0:
-    name = str(input('Digite um nome: ')).strip().capitalize()
+n = 'S'
+while n == 'S':
+    name = str(input('\nDigite um nome: ')).strip().capitalize()
     nomes.append(name)
-    n = int(input('Deseja continuar? (1 = S / 0 = N)\nSua resposta: '))
+    n = str(input('Deseja continuar? [S/N]\nSua resposta: ')).upper().strip()
 print('\nOs nomes digitados foram: {}'.format(nomes))
