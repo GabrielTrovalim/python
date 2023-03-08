@@ -6,4 +6,4 @@ while cont > 1:
     cont -= 1 # contagem regressiva.
     fat *= cont # multiplicação da contagem.
     print(cont, end=' ')
-print('\nResultado fatorial do número digitado: {}\n'.format(fat))
+print('\nResultado fatorial de {}!: {}\n'.format(num, fat))
