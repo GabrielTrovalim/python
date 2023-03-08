@@ -1,4 +1,4 @@
-idade_g = 0
+idade_g = 0 # idade geral
 mulheres19 = 0
 maior = 0 # maior idade detectada
 nomem = '' # nome do homem mais velho
