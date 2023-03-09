@@ -2,6 +2,7 @@ from time import sleep
 n = 1 # controle.
 soma = 0
 cont = 0 # contador de laços.
+nums = [] # lista dos números digitados.
 print('\n[ATENÇÃO] Para encerrar digite 0\n')
 sleep(2)
 while n != 0:
@@ -12,6 +13,8 @@ while n != 0:
     else:
         soma += num
         cont += 1
+        nums.append(num)
+nums.sort()
 if cont == 0:
     print('\nNenhum número foi inserido, fora o comando de parada.')
 elif cont == 1:
@@ -20,3 +23,4 @@ elif cont == 1:
 else:
     media = soma / cont
     print('\nA média de todos os {} números digitados é: {:.2f}'.format(cont, media))
+    print('O maior número digitado foi: {} e o menor número foi: {}\n'.format(nums[-1], nums[0]))
