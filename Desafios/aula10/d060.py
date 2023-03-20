@@ -5,5 +5,7 @@ fat = 1 # contador fatorial.
 while cont > 1:
     cont -= 1 # contagem regressiva.
     fat *= cont # multiplicação da contagem.
-    print(cont, end=' ')
-print('\nResultado fatorial de {}!: {}\n'.format(num, fat))
+    print('{}'.format(cont),end=' ')
+    print('x ' if cont > 1 else '= ',end='')
+print('{}'.format(fat))
+print('\nO resultado de {}! é igual a: {}\n'.format(num, fat))
