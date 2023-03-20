@@ -1,3 +1,4 @@
+from time import sleep
 cho = 0 # Contador da escolha
 n1 = 0 # contador do primeiro valor
 n2 = 0 # contador do segundo valor
@@ -26,7 +27,10 @@ while cho != 5:
         n2 -= num2
         num1 = float(input('\nDigite o primeiro valor: '))
         n1 += num1
-        num2 = float(input('\nDigite o segundo valor: '))
+        num2 = float(input('Digite o segundo valor: '))
         n2 += num2
         print('\nOs valores foram alterados para {} e {}, respectivamente.'.format(n1, n2))
-print('\nVocê saiu do programa!')
+    elif cho > 5 or cho < 1:
+        print('\nEntrada de dados invalida... Tente novamente.')
+        sleep(3.5)
+print('\nVocê saiu do programa!\n')
