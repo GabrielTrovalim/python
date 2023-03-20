@@ -10,7 +10,6 @@ while jogo != 'N':
     print('\nO computador está sorteando um número... ')
     sleep(2)
     print('\nPronto.\nNúmero sorteado!')
-    print(num_pc)
     sleep(1)
     num = int(input('\nTente adivinhar o número entre 0 e 10\nSua jogada: '))
     if num == num_pc:
