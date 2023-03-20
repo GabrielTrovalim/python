@@ -14,7 +14,7 @@ while n != 0:
         soma += num
         cont += 1
         nums.append(num)
-nums.sort()
+nums.sort() # Organizando os números da lista.
 if cont == 0:
     print('\nNenhum número foi inserido, fora o comando de parada.')
 elif cont == 1:
