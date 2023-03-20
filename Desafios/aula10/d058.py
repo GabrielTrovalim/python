@@ -10,14 +10,18 @@ while jogo != 'N':
     print('\nO computador está sorteando um número... ')
     sleep(2)
     print('\nPronto.\nNúmero sorteado!')
+    print(num_pc)
     sleep(1)
-    num = int(input('\nTente adivinhar o número entre 1 e 10\nSua jogada: '))
+    num = int(input('\nTente adivinhar o número entre 0 e 10\nSua jogada: '))
     if num == num_pc:
         print('\nParabéns você ganhou!')
         print('Você precisou de apenas uma tentativa.')
     else:
         while num != num_pc:
-            print('\nOps, parece que você errou...')
+            if num > num_pc:
+                print('\nTente um número menor...')
+            else:
+                print('\nTente um número maior...')
             num = int(input('Tente novamente: '))
             tentativas += 1
         print('\nParabéns você ganhou!')
